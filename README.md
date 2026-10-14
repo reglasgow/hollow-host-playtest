@@ -1,37 +1,40 @@
-# HOLLOW HOST — Android playtest
+# HOLLOW HOST — free Android playtest
 
-A top-down horror roguelite where you play a parasite inside a dead colossus. Move with the left thumb and aim/shoot with the right. Explore rooms, collect relics and fight towards the heart.
+You are a small parasite inside a dead colossus. Explore connected rooms, collect relics and fight the creatures guarding its heart. Move with your left thumb and aim/shoot with your right.
 
-**Early, free, voluntary and unpaid playtest. English is the default.** Settings > Language has two clearly marked buttons, English and Italiano; the choice applies immediately and is saved. Contains stylized blood and body horror. Development uses AI assistance for code, generated artwork and music composition; the soundtrack uses sampled instruments and wordless choir, not a recorded live orchestra or singers.
+**[Download APK v0.6.18](https://github.com/reglasgow/hollow-host-playtest/releases/download/android-0.6.18/Hollow-Host-Godot-0.6.18-test.apk)** (89.1 MB). Android 7.0+, ARM64/ARMv7, landscape. No account or payment required. Update the previous native Godot APK without uninstalling to preserve progress.
 
-## Download and trailer
+**[Game page and feedback](https://gamecreepstudio.itch.io/hollow-host)**
 
-**[Download the current Android APK — v0.6.17](https://github.com/reglasgow/hollow-host-playtest/releases/download/android-0.6.17/Hollow-Host-Godot-0.6.17-test.apk)** (89.1MB). Version 0.6.16 has a broken language selector and is superseded; use this build for testing.
+[Watch the 50-second English 1080p trailer](https://github.com/reglasgow/hollow-host-playtest/releases/download/android-0.6.17/Hollow-Host-Montaggio-2D-10-1080p.mp4). The trailer combines prepared native gameplay from an earlier build with illustrated promotional cinematics made outside the engine; the cinematics are not playable scenes.
 
-[Watch/download the1080p English trailer](https://github.com/reglasgow/hollow-host-playtest/releases/download/android-0.6.17/Hollow-Host-Montaggio-2D-10-1080p.mp4) (50seconds). It combines illustrated cinematic scenes made outside the game with prepared native gameplay; the illustrated cinematics are promotional, not playable scenes.
+## What changed
 
-[Release, instructions, screenshots and checksums](https://github.com/reglasgow/hollow-host-playtest/releases/tag/android-0.6.17). Android7.0+, ARM64/ARMv7, landscape. Direct APK outside Google Play; Android may ask for installation permission for the download source. No game account required. Update an earlier native Godot build without uninstalling to preserve progress.
+Attacking enemies and bosses now have small, grounded visual movements. Hits have a brief sprite-only animation pause and an impact response. Critical hits, player damage and major impacts have subtle camera movement. These effects leave movement, collisions and damage unchanged. Settings > Reduced motion & camera shake disables the added deformation and camera movement.
 
-This candidate fixes language selection and makes English the default. It includes nine separately arranged orchestral/choral themes and revised effects. Iris moves and has four attacks with visible warnings. Earlier versions remain available for archival comparison.
+English is the default. Settings > Language provides two clearly marked buttons, English and Italiano; selection applies immediately and is saved. This is an early development candidate, not a finished 1.0 or a Google Play release.
 
-## A useful first test
+## A useful 10-minute test
 
-Try the tutorial and a few rooms for10–15minutes. This is a suggested test window, not a measured average session. You do not need to finish a run.
+Play the tutorial and a few rooms, then tell us:
+1. Are moving and aiming comfortable on your phone?
+2. Which attack or room exit is hard to read?
+3. Where did you stop, and why?
 
-1. Did movement and aiming feel comfortable on your phone?
-2. Could you distinguish open exits, closed exits and continuous walls?
-3. Which enemy/boss attack felt unclear or unfair, and where did you stop?
+Ten minutes is a suggested test window, not an observed average. Use FEEDBACK in Settings, Pause or after a run, or leave a comment on the game page. Written feedback is submitted only when you press SEND and does not require analytics consent. Please avoid personal information; device model and Android version are optional.
 
-Use **FEEDBACK** in Settings, Pause or after a run, or leave a Reddit comment. Up to1500characters in the game; please do not include personal details. Feedback sends only when you press SEND, and works independently of analytics. Device model/Android version are optional if you choose to mention them. No purchases, ratings or reciprocal-testing promises.
+## Optional measurements and disclosures
 
-## Optional measurements and privacy
+Analytics are disabled until explicit consent. You can decline and play normally. With consent, active play time, movement/aim time, tutorial progress, room visits, run outcomes, semantic UI actions and coarse 12x8 initial control-touch cells go to the existing PostHog Cloud USA project. A random installation code is used; no name, e-mail, advertising ID, location, screen/audio/keyboard recording, session replay or analytics SDK. Only Android INTERNET permission is requested.
 
-**Analytics are disabled until you explicitly enable them.** Decline and play normally. With consent, the game sends active play time, movement/aim time, tutorial progress, room visits, run outcomes, semantic button actions and coarse12×8initial control-touch cells to the existing PostHog Cloud USA project. It uses a random code, not a name, email or advertising ID. No screen/audio/keyboard recording, session replay or analytics SDK is included. Only the Android INTERNET permission is requested.
+Written feedback is a separate deliberate submission, includes build/session/room context and is queued locally when offline with bounded retries. Settings > Playtest analytics lets you stop measurements or request deletion. Deletion requests are handled by the team, not an immediate automatic purge. The project's one-year query window is not a guarantee of automatic deletion. Version 0.6.14 remains an offline candidate without these measurements.
 
-Written feedback is a separate deliberate submission and includes game version and session/room context. Offline submissions are queued locally with bounded retries when the game runs again. Stop analytics or request data deletion from Settings > Playtest analytics. Deletion requests are handled by the team, not an immediate automated purge. The free project's one-year query window does not guarantee automatic deletion.0.6.14 remains available as an offline build without measurements.
+Contains stylized blood and body horror. Development uses AI assistance for code, generated artwork and music composition; the soundtrack uses sampled instruments and wordless choir, not a recorded live orchestra or singers.
 
-Automated native checks and exact compiled resources of this signed APK passed, including all310 audio samples. The language buttons were exercised with simulated touch input at mobile landscape sizes, including persistence after restart. Consent/feedback/language checks made zero network requests; actual synthetic ingestion was verified previously on0.6.15 with the unchanged client/endpoint. Internal tests are excluded from the player dashboard. **Physical Android/emulator validation, human balance, listening and battery measurements are NOT RUN by the agent.** This is an early playtest candidate, not a store release or a claim of artistic acceptance.
+## Verification and limits
 
-Source stays in a separate private repository; this public repository contains test binaries, media and instructions.
+The signed APK and its exact compiled game resources passed automated checks. There are 51 native checks for combat feedback, language, consent, written feedback and persistence, plus an 18-case seeded simulation comparison against 0.6.17: damage, movement, trajectories and save snapshots matched. These tests used native Windows Godot and generated no remote analytics. They do not exercise Android native execution or establish human enjoyment.
 
-APK SHA256: `0edfddaee2209d9cf7e7e68dd1093d4ddfe355312402311b85cc31cffed0781b`
+**Physical Android testing, human balance/listening, battery and thermal measurements are NOT RUN by the agent.** We need real device feedback before considering 1.0. Source remains in a separate private repository. Older public test builds remain available for comparison.
+
+APK SHA256: `2995b1120cd1467f70bf868070cb5c8e2cf5ee8a997c585318a7295d914ad40d`
