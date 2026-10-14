@@ -1,40 +1,44 @@
-# HOLLOW HOST — free Android playtest
+# HOLLOW HOST — free Android beta 0.6.20
 
-You are a small parasite inside a dead colossus. Explore connected rooms, collect relics and fight the creatures guarding its heart. Move with your left thumb and aim/shoot with your right.
+Play a parasite inside a dead colossus. Explore connected rooms, choose mutations and fight towards its heart. Move with your left thumb; aim and shoot with your right.
 
-**[Download APK v0.6.18](https://github.com/reglasgow/hollow-host-playtest/releases/download/android-0.6.18/Hollow-Host-Godot-0.6.18-test.apk)** (89.1 MB). Android 7.0+, ARM64/ARMv7, landscape. No account or payment required. Update the previous native Godot APK without uninstalling to preserve progress.
+**[Download the signed APK 0.6.20](https://github.com/reglasgow/hollow-host-playtest/releases/download/android-0.6.20/Hollow-Host-Godot-0.6.20-test.apk)** — 89.2 MB, Android 7.0+, ARM64/ARMv7, landscape. Free, voluntary and unpaid; no account or purchase. Update the previous native Godot APK without uninstalling to preserve progress.
 
-**[Game page and feedback](https://gamecreepstudio.itch.io/hollow-host)**
+[Game page and comments](https://gamecreepstudio.itch.io/hollow-host) · [23.5-second gameplay preview](https://github.com/reglasgow/hollow-host-playtest/releases/download/android-0.6.20/Hollow-Host-Review077.mp4)
 
-[Watch the 50-second English 1080p trailer](https://github.com/reglasgow/hollow-host-playtest/releases/download/android-0.6.17/Hollow-Host-Montaggio-2D-10-1080p.mp4). The trailer combines prepared native gameplay from an earlier build with illustrated promotional cinematics made outside the engine; the cinematics are not playable scenes.
+The short preview was recorded on 0.6.19 with prepared encounters and scripted controls, actual damage and no added invulnerability. It is development footage, not a human playtest or a recording of the additional 0.6.20 changes. Older videos already attached to social posts remain historical.
 
-## What changed
+## What changed in 0.6.20
 
-Attacking enemies and bosses now have small, grounded visual movements. Hits have a brief sprite-only animation pause and an impact response. Critical hits, player damage and major impacts have subtle camera movement. These effects leave movement, collisions and damage unchanged. Settings > Reduced motion & camera shake disables the added deformation and camera movement.
+- Clearer player damage and a short death transition, with the cause shown.
+- Foot-based door passage, closer approach to the upper boundary and a more compact arena.
+- Item effects shown below names; fewer early duplicates; revised blood drops, prices and power growth.
+- First mutation choice, accept/keep weapon choice, short or extended expeditions, equivalent innate synergies and a dodge lesson.
+- Prior fixes for attacks after room clear, unintended touch input at screen edges, health HUD overlap and durable offline feedback.
 
-English is the default. Settings > Language provides two clearly marked buttons, English and Italiano; selection applies immediately and is saved. This is an early development candidate, not a finished 1.0 or a Google Play release.
+English is the default; Italiano is selectable. This is a beta candidate, not a finished 1.0 or a Google Play release. The existing music motif and wordless choir remain, with more room for important effects; reduced motion is available.
 
-## A useful 10-minute test
+## Help with a ten-minute test
 
-Play the tutorial and a few rooms, then tell us:
-1. Are moving and aiming comfortable on your phone?
-2. Which attack or room exit is hard to read?
-3. Where did you stop, and why?
+Try the tutorial and a few rooms. Ten minutes is a suggested window, not a measured duration. Please tell us:
+1. Could you tell when and why you were hit, and pass through the side doors comfortably?
+2. Did the first mutation and item descriptions make sense? What changed your tactics?
+3. Where did you stop, and what would make you try another run?
 
-Ten minutes is a suggested test window, not an observed average. Use FEEDBACK in Settings, Pause or after a run, or leave a comment on the game page. Written feedback is submitted only when you press SEND and does not require analytics consent. Please avoid personal information; device model and Android version are optional.
+Send one report through FEEDBACK in Settings/Pause/after a run, or comment on the game page/post. Say whether you installed this version or only watched the preview. Device model and Android version are optional; avoid personal information. A critical report is welcome. No rating exchanges or testing guarantees.
 
-## Optional measurements and disclosures
+If you are comfortable helping with measurements, choose YES in the optional Playtest analytics prompt before playing. Declining does not affect play or written feedback. Please do not enable it merely to inflate a target, and do not repeatedly reinstall to count as new users.
 
-Analytics are disabled until explicit consent. You can decline and play normally. With consent, active play time, movement/aim time, tutorial progress, room visits, run outcomes, semantic UI actions and coarse 12x8 initial control-touch cells go to the existing PostHog Cloud USA project. A random installation code is used; no name, e-mail, advertising ID, location, screen/audio/keyboard recording, session replay or analytics SDK. Only Android INTERNET permission is requested.
+## Privacy and disclosures
 
-Written feedback is a separate deliberate submission, includes build/session/room context and is queued locally when offline with bounded retries. Settings > Playtest analytics lets you stop measurements or request deletion. Deletion requests are handled by the team, not an immediate automatic purge. The project's one-year query window is not a guarantee of automatic deletion. Version 0.6.14 remains an offline candidate without these measurements.
+Analytics remain off until explicit consent. With consent, the existing PostHog Cloud USA project receives active play intervals, movement/aim time, tutorial/room/run events and coarse initial touch cells. A random installation code is used; no name, e-mail, advertising ID, location, recording, session replay or analytics SDK. Android INTERNET is the only permission.
 
-Contains stylized blood and body horror. Development uses AI assistance for code, generated artwork and music composition; the soundtrack uses sampled instruments and wordless choir, not a recorded live orchestra or singers.
+Written feedback is a separate deliberate submission, queued locally offline. The queue is bounded and errors are reported. Settings > Playtest analytics stops measurements or requests deletion; requests are handled by the team, not instant automatic purge. No guaranteed automatic retention period is claimed.
+
+Contains stylized blood and body horror. AI tools assist development, generated artwork and music composition. The music uses sampled instruments and wordless choir, not a recorded live orchestra or singers.
 
 ## Verification and limits
 
-The signed APK and its exact compiled game resources passed automated checks. There are 51 native checks for combat feedback, language, consent, written feedback and persistence, plus an 18-case seeded simulation comparison against 0.6.17: damage, movement, trajectories and save snapshots matched. These tests used native Windows Godot and generated no remote analytics. They do not exercise Android native execution or establish human enjoyment.
+The exact signed package matches its build audit. Automated native model/UI/audio/feedback, wall reach and navigation checks were recorded, including compiled game resources from this APK executed on Windows. They do not prove Android lifecycle, enjoyment, balance, listening, battery or thermal behavior. Those physical-device tests remain pending. Source stays private; only binaries and public instructions are distributed here.
 
-**Physical Android testing, human balance/listening, battery and thermal measurements are NOT RUN by the agent.** We need real device feedback before considering 1.0. Source remains in a separate private repository. Older public test builds remain available for comparison.
-
-APK SHA256: `2995b1120cd1467f70bf868070cb5c8e2cf5ee8a997c585318a7295d914ad40d`
+APK SHA256: `db7ef8e77f3dedaad7c1f4149e72b168d13174884f3ab5ecc9a861a2796d6aa6`
